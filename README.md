@@ -49,8 +49,10 @@ You can change the characteristics of the S-curve with 2 command line args: sim-
 Basically, 'sim-thresh' is the Jaccard similarity and 'pr-@-sim-thresh' is the probability of a hash collision at 'sim-thresh.' Together these parameters characterize the S-curve.
 
 By default these are:
-- 0.99 for 'sim-thresh' because we really want the listing to have as many words in the desired product as possible (increased precision).
+- 0.975 for 'sim-thresh' because we really want the listing to have as many words in the desired product as possible (increased precision).
 - 0.99 for 'pr-@-sim-thresh' because we really don't want to miss matches (increased recall).
+
+These default parameters match products to 6% to 9% of the listings.
 
 If you want to loosen the precision, try values of 0.9, 0.8, ... , 0.5 for 'sim-thresh'.
    

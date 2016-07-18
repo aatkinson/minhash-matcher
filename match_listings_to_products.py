@@ -211,7 +211,7 @@ if __name__ == "__main__":
 
     # Get the desired Jaccard similarity so we can set choose our N/bands and
     # K/rows to set the S curve threshold
-    similarity_threshold = 0.99
+    similarity_threshold = 0.975
     pr_at_similarity_threshold = 0.99
     if len(sys.argv) >= 5:
         try:
